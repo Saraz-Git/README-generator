@@ -2,8 +2,6 @@
 
 ## Description
 
-When creating an open source project on GitHub, it’s important to have a high-quality README for the app. 
-
 This command-line application dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). 
 
 The application will be invoked by using the following command:
@@ -52,5 +50,4 @@ The following image shows the web application's appearance and functionality:
 
 * A sample README.md file for a project repository generated using your application
 
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
+* The URL of the GitHub repository: https://github.com/Saraz-Git/README-generator
