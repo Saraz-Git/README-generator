@@ -46,12 +46,19 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+  if (license === "No License") {
+    return "license N/A";
+  } else {
+    return `Licensed under the [${license}](${renderLicenseLink(license)}) license.`;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title} ${renderLicenseBadge(data.license)}
+  # ${data.title} 
+  ${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -61,10 +68,11 @@ ${data.description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+- [Features](#features)
 - [Contributing](#contributing)
 - [Test](#tests)
 - [Questions](#questions)
+- [License](#license)
 
 ## Installation
 
@@ -74,29 +82,29 @@ ${data.installation}
 
 ${data.usage}
 
-## License
-
-This application is covered under ${data.license}${renderLicenseLink(data.license)}.
-
 ## Features
 
-If your project has a lot of features, list them here.
+${data.feature}
 
 ## Contributing
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-
-https://www.contributor-covenant.org/
+${data.contributing}
 
 ## Tests
 
-Then provide examples on how to run tests here.
+${data.test}
 
 ## Questions
 
-Contact this email <${data.email}> with additional questions
+For all related questions please email <${data.email}>.
 
-[Link ](https://github.com/${data.github}) to Github Profile
+Github Profile [Link](https://github.com/${data.github}).
+
+## License
+
+Copyright (c) ${data.github}. All rights reserved.
+
+${renderLicenseSection(data.license)}
 `;
 }
 
