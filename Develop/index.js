@@ -30,6 +30,24 @@ const questions = [
         default: "Provide instructions and examples for use."
     },
     {
+        type: 'input',
+        name: 'feature',
+        message: 'Please list the features of this application?',
+        default: "If your project has a lot of features, list them here."
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Please list any contributors?',
+        default: "[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/) "
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Provide required tests if applicable?',
+        default: "Provide examples on how to run tests here."
+    },
+    {
         type: "list",
         message: "Choose your license",
         name: "license",
