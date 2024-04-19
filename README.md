@@ -4,12 +4,6 @@
 
 This command-line application dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). 
 
-The application will be invoked by using the following command:
-
-```bash
-node index.js
-```
-
 ## User Story
 
 ```md
@@ -40,13 +34,26 @@ THEN I am taken to the corresponding section of the README
 
 ## Usage
 
+To clone and run this repository you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
+
+```md
+# Clone this repository
+git clone git@github.com:Saraz-Git/README-generator.git
+# Go into the repository
+cd README-generator
+# Install dependencies
+npm i
+# Run the app
+npm start
+```
+
 The following image shows the web application's appearance and functionality:
 
-[![screenshot]()]
+[![screenshot](./assets/demo_generator.gif)]
 
 ## Review
 
-* A walkthrough video demonstrating the functionality of the application :[video] (https://www.loom.com/share/ca8bb84c2b054c7d96e2371cb5182438?sid=4fe728b9-fe45-4388-8e1e-bdd5ea82d4b0)
+* A walkthrough video demonstrating the functionality of the application :[video] (https://www.loom.com/share/973864eebd6b42dea13dc705dcd25d73?sid=c05d16b1-b4c3-43b6-a9dd-9481b0095d51)
 
 * A sample README.md file for a project repository generated using your application
 
