@@ -48,9 +48,21 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === "No License") {
-    return "license N/A";
+    return "";
   } else {
-    return `Licensed under the [${license}](${renderLicenseLink(license)}) license.`;
+    return `## License
+
+Copyright(c).All rights reserved.
+    
+Licensed under the[${license}](${renderLicenseLink(license)}) license.`;
+  }
+}
+
+function renderLicenseContent(license) {
+  if (license === "No License") {
+    return "";
+  } else {
+    return `- [License](#license)`
   }
 }
 
@@ -72,7 +84,7 @@ ${data.description}
 - [Contributing](#contributing)
 - [Test](#tests)
 - [Questions](#questions)
-- [License](#license)
+${renderLicenseContent(data.license)}
 
 ## Installation
 
@@ -99,10 +111,6 @@ ${data.test}
 For all related questions please email <${data.email}>.
 
 Github Profile [Link](https://github.com/${data.github}).
-
-## License
-
-Copyright (c) ${data.github}. All rights reserved.
 
 ${renderLicenseSection(data.license)}
 `;

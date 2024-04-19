@@ -46,7 +46,7 @@ The following image shows the web application's appearance and functionality:
 
 ## Review
 
-* A walkthrough video demonstrating the functionality of the application : https://www.loom.com/share/ca8bb84c2b054c7d96e2371cb5182438?sid=4fe728b9-fe45-4388-8e1e-bdd5ea82d4b0
+* A walkthrough video demonstrating the functionality of the application :[video] (https://www.loom.com/share/ca8bb84c2b054c7d96e2371cb5182438?sid=4fe728b9-fe45-4388-8e1e-bdd5ea82d4b0)
 
 * A sample README.md file for a project repository generated using your application
 
