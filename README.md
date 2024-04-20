@@ -33,6 +33,22 @@ npm i
 npm start
 ```
 ## Usage
+
+The following image shows the web application's appearance and functionality:
+![screenshot](./assets/demo_generator.gif)
+
+## Features
+
+* Nodejs
+
+* npm inquirer
+
+## Contributing
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/) 
+
+## Tests
+
 ```
 GIVEN a command-line application that accepts user input
 
@@ -58,20 +74,6 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
-## Features
-
-* Nodejs
-
-* npm inquirer
-
-## Contributing
-
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://www.contributor-covenant.org/) 
-
-## Tests
-
-The following image shows the web application's appearance and functionality:
-![screenshot](./assets/demo_generator.gif)]
 
 ## Questions
 
